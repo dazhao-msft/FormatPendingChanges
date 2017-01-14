@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using Task = System.Threading.Tasks.Task;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     internal abstract class DocumentExecuteCommandAction : DocumentAction
     {

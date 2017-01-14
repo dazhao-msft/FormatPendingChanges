@@ -1,6 +1,6 @@
 using EnvDTE;
-using Microsoft.FormatPendingChanges.DocumentActions;
-using Microsoft.FormatPendingChanges.SourceControlProviders;
+using FormatPendingChanges.DocumentActions;
+using FormatPendingChanges.SourceControlProviders;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.Shell;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
-namespace Microsoft.FormatPendingChanges
+namespace FormatPendingChanges
 {
     internal sealed class FormatPendingChangesService
     {

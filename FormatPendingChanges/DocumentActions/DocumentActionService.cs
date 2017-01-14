@@ -10,7 +10,7 @@ using System.Linq;
 using Constants = EnvDTE.Constants;
 using Task = System.Threading.Tasks.Task;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     [Export(typeof(DocumentActionService))]
     internal sealed class DocumentActionService

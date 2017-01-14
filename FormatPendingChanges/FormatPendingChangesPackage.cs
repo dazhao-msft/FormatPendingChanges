@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.FormatPendingChanges
+namespace FormatPendingChanges
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.

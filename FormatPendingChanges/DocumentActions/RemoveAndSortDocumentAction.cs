@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     internal abstract class RemoveAndSortDocumentAction : DocumentExecuteCommandAction
     {

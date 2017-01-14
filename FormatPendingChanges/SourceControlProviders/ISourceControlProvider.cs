@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using System.Threading.Tasks;
 
-namespace Microsoft.FormatPendingChanges.SourceControlProviders
+namespace FormatPendingChanges.SourceControlProviders
 {
     internal interface ISourceControlProvider
     {

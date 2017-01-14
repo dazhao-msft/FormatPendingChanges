@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel.Composition;
 using System.Linq;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     [Export(typeof(DocumentAction))]
     internal sealed class XmlFormatDocumentAction : FormatDocumentAction

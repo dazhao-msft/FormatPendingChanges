@@ -1,7 +1,7 @@
 ﻿// PkgCmdID.cs
 // MUST match PkgCmdID.h
 
-namespace Microsoft.FormatPendingChanges
+namespace FormatPendingChanges
 {
     internal static class PkgCmdIDList
     {

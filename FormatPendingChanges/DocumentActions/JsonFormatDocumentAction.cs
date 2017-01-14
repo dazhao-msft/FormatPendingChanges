@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Composition;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     // [Export(typeof(DocumentAction))]
     internal sealed class JsonFormatDocumentAction : FormatDocumentAction

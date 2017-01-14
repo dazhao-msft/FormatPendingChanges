@@ -2,7 +2,7 @@
 // MUST match guids.h
 using System;
 
-namespace Microsoft.FormatPendingChanges
+namespace FormatPendingChanges
 {
     static class GuidList
     {

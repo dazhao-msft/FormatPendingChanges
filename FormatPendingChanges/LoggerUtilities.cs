@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace Microsoft.FormatPendingChanges
+namespace FormatPendingChanges
 {
     internal static class LoggerUtilities
     {

@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using System.Threading.Tasks;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     internal abstract class DocumentAction
     {

@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel.Composition;
 using VSLangProj;
 
-namespace Microsoft.FormatPendingChanges.DocumentActions
+namespace FormatPendingChanges.DocumentActions
 {
     [Export(typeof(DocumentAction))]
     internal sealed class CSharpRemoveAndSortDocumentAction : RemoveAndSortDocumentAction

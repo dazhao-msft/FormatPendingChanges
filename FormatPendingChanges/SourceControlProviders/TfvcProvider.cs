@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
-namespace Microsoft.FormatPendingChanges.SourceControlProviders
+namespace FormatPendingChanges.SourceControlProviders
 {
     [Export(typeof(ISourceControlProvider))]
     internal sealed class TfvcProvider : ISourceControlProvider

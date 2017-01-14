@@ -89,7 +89,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FormatPendingChanges.vsct" />
+    <VSCTCompile Include="FormatPendingChanges.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images.png" />
     <Content Include="Resources\Package.ico" />
   </ItemGroup>
   <ItemGroup>

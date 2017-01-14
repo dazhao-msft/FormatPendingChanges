@@ -60,8 +60,7 @@ namespace FormatPendingChanges
             _service = new FormatPendingChangesService(this);
 
             // Add our command handlers for menu (commands must exist in the .vsct file)
-            OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
-            if (null != mcs)
+            if (GetService(typeof(IMenuCommandService)) is OleMenuCommandService mcs)
             {
                 {
                     var formatPendingChangesCommand = new OleMenuCommand(_service.FormatPendingChangesAsync,

@@ -8,6 +8,7 @@ using Microsoft.VisualStudio.Shell.Interop;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
@@ -79,7 +80,7 @@ namespace FormatPendingChanges
                     return;
                 }
 
-                var filesToFormat = EnumerateProjectItemsInSolution().ToList();
+                var filesToFormat = EnumerateProjectItemsInSolution().Where(p => File.Exists(p)).ToList();
 
                 await _documentActionService.ApplyDocumentActionsAsync(filesToFormat);
             },

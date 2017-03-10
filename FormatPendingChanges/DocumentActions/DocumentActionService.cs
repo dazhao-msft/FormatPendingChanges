@@ -111,11 +111,11 @@ namespace FormatPendingChanges.DocumentActions
                 await executableDocumentAction.ExecuteAsync(projectItem);
             }
 
-            projectItem.Document.Save();
+            projectItem.Document?.Save();
 
             if (!isOpen)
             {
-                projectItem.Document.Close();
+                projectItem.Document?.Close();
             }
         }
     }

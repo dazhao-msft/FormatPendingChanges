@@ -33,7 +33,7 @@ namespace FormatPendingChanges.DocumentActions
                 {
                     try
                     {
-                        projectItem.Document.DTE.ExecuteCommand(_command);
+                        projectItem.Document?.DTE.ExecuteCommand(_command);
 
                         break;
                     }

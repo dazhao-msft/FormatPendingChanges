@@ -5,7 +5,7 @@ using System.ComponentModel.Composition;
 
 namespace FormatPendingChanges.DocumentActions
 {
-    // [Export(typeof(DocumentAction))]
+    [Export(typeof(DocumentAction))]
     internal sealed class JsonFormatDocumentAction : FormatDocumentAction
     {
         private const string FileExtension = ".json";

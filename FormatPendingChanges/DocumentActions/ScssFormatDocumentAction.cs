@@ -5,7 +5,7 @@ using System.ComponentModel.Composition;
 
 namespace FormatPendingChanges.DocumentActions
 {
-    // [Export(typeof(DocumentAction))]
+    [Export(typeof(DocumentAction))]
     internal sealed class ScssFormatDocumentAction : FormatDocumentAction
     {
         private const string FileExtension = ".scss";

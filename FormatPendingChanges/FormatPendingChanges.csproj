@@ -58,6 +58,7 @@
     <Compile Include="DocumentActions\FormatDocumentAction.cs" />
     <Compile Include="DocumentActions\HtmlFormatDocumentAction.cs" />
     <Compile Include="DocumentActions\JsonFormatDocumentAction.cs" />
+    <Compile Include="DocumentActions\PythonFormatDocumentAction.cs" />
     <Compile Include="DocumentActions\RemoveAndSortDocumentAction.cs" />
     <Compile Include="DocumentActions\ScssFormatDocumentAction.cs" />
     <Compile Include="DocumentActions\TypeScriptFormatDocumentAction.cs" />

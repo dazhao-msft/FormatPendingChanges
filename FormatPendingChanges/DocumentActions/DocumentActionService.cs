@@ -58,7 +58,15 @@ namespace FormatPendingChanges.DocumentActions
 
                 foreach (var path in paths)
                 {
-                    await ApplyDocumentActionsAsync(path);
+                    try
+                    {
+                        await ApplyDocumentActionsAsync(path);
+                    }
+                    catch (NotImplementedException)
+                    {
+                        string ErrorMessageFormat = @"Error occurred when the following file being formatted: " + Environment.NewLine + "{0}";
+                        LoggerUtilities.LogError(string.Format(CultureInfo.CurrentCulture, ErrorMessageFormat, path));
+                    }
 
                     remainingPaths.Remove(path);
                 }

@@ -148,9 +148,8 @@ namespace FormatPendingChanges
                 throw new ArgumentNullException(nameof(solution));
             }
 
-            ISourceControlProvider targetSourceControlProvider;
 
-            if (!_sourceControlProviders.TryGetValue(solution.FullName, out targetSourceControlProvider))
+            if (!_sourceControlProviders.TryGetValue(solution.FullName, out ISourceControlProvider targetSourceControlProvider))
             {
                 var componentModel = _serviceProvider.GetService(typeof(SComponentModel)) as IComponentModel2;
 
@@ -202,16 +201,13 @@ namespace FormatPendingChanges
             if (solution != null)
             {
                 Guid projectType = Guid.Empty;
-                IEnumHierarchies hierEnum;
-                if (ErrorHandler.Succeeded(solution.GetProjectEnum((uint)__VSENUMPROJFLAGS.EPF_LOADEDINSOLUTION, ref projectType, out hierEnum)))
+                if (ErrorHandler.Succeeded(solution.GetProjectEnum((uint)__VSENUMPROJFLAGS.EPF_LOADEDINSOLUTION, ref projectType, out IEnumHierarchies hierEnum)))
                 {
                     hierEnum.Reset();
                     IVsHierarchy[] vsHierarchies = new IVsHierarchy[1];
-                    uint numReturned;
-                    while (ErrorHandler.Succeeded(hierEnum.Next(1, vsHierarchies, out numReturned)) && numReturned == 1)
+                    while (ErrorHandler.Succeeded(hierEnum.Next(1, vsHierarchies, out uint numReturned)) && numReturned == 1)
                     {
-                        object project;
-                        if (ErrorHandler.Succeeded(vsHierarchies[0].GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID.VSHPROPID_ExtObject, out project)))
+                        if (ErrorHandler.Succeeded(vsHierarchies[0].GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID.VSHPROPID_ExtObject, out object project)))
                         {
                             if (project is Project)
                             {

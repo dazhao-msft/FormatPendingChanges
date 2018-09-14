@@ -9,3 +9,6 @@
 // file manually.
 
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1017:MarkAssembliesWithComVisible")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "VSSDK006:Check services exist")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "VSSDK004:Use BackgroundLoad flag in ProvideAutoLoad attribute for asynchronous auto load.")]

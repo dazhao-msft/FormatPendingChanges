@@ -62,7 +62,7 @@ namespace FormatPendingChanges.DocumentActions
                     {
                         await ApplyDocumentActionsAsync(path);
                     }
-                    catch (NotImplementedException)
+                    catch
                     {
                         string ErrorMessageFormat = @"Error occurred when the following file being formatted: " + Environment.NewLine + "{0}";
                         LoggerUtilities.LogError(string.Format(CultureInfo.CurrentCulture, ErrorMessageFormat, path));

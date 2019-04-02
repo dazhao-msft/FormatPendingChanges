@@ -3,6 +3,7 @@ using LibGit2Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.Composition;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;

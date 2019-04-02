@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Composition;
 using VSLangProj;
+using System.Composition;
 
 namespace FormatPendingChanges.DocumentActions
 {

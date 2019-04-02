@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Composition;
+using System.Composition;
 using VSLangProj;
 
 namespace FormatPendingChanges.DocumentActions

@@ -6,7 +6,7 @@
     <Description xml:space="preserve">A set of tools for pending changes.</Description>
   </Metadata>
   <Installation AllUsers="true">
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.1]" />
   </Installation>
   <Dependencies>
   </Dependencies>

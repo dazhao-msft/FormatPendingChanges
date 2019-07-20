@@ -96,9 +96,13 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.0.2264" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FormatPendingChanges.vsct" />
     <Content Include="Resources\Images.png" />
     <Content Include="Resources\Package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSCTCompile Include="FormatPendingChanges.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx" />

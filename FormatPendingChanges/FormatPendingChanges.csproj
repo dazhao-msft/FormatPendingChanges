@@ -65,7 +65,9 @@
     <Compile Include="PkgCmdID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FormatPendingChangesPackage.cs" />
-    <Compile Include="Resources.Designer.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SourceControlProviders\GitProvider.cs" />
     <Compile Include="SourceControlProviders\ISourceControlProvider.cs" />
     <Compile Include="SourceControlProviders\TfvcProvider.cs" />
@@ -90,7 +92,7 @@
     <Reference Include="System.Design" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="15.9.3" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.200" ExcludeAssets="runtime" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.0.2264" />
   </ItemGroup>
   <ItemGroup>

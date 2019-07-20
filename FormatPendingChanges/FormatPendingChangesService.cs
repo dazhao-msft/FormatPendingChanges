@@ -44,7 +44,7 @@ namespace FormatPendingChanges
             menuCommand.Enabled = !_isExecutingCommand && KnownUIContexts.SolutionExistsAndNotBuildingAndNotDebuggingContext.IsActive;
         }
 
-        public async void FormatPendingChangesAsync(object sender, EventArgs e)
+        public async void FormatPendingChanges(object sender, EventArgs e)
         {
             await ExecuteCommandExclusivelyAsync(async () =>
             {
@@ -69,7 +69,7 @@ namespace FormatPendingChanges
             "Format Pending Changes");
         }
 
-        public async void FormatSolutionAsync(object sender, EventArgs e)
+        public async void FormatSolution(object sender, EventArgs e)
         {
             await ExecuteCommandExclusivelyAsync(async () =>
             {
@@ -87,7 +87,7 @@ namespace FormatPendingChanges
             "Format Solution");
         }
 
-        public async void UndoUnmodifiedChangesAsync(object sender, EventArgs e)
+        public async void UndoUnmodifiedChanges(object sender, EventArgs e)
         {
             await ExecuteCommandExclusivelyAsync(async () =>
             {

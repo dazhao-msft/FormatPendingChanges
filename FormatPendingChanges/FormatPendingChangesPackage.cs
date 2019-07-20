@@ -63,21 +63,21 @@ namespace FormatPendingChanges
             if (GetService(typeof(IMenuCommandService)) is OleMenuCommandService mcs)
             {
                 {
-                    var formatPendingChangesCommand = new OleMenuCommand(_service.FormatPendingChangesAsync,
+                    var formatPendingChangesCommand = new OleMenuCommand(_service.FormatPendingChanges,
                                                                          null,
                                                                          _service.QueryStatus,
                                                                          new CommandID(GuidList.guidFormatPendingChangesCmdSet, (int)PkgCmdIDList.idFormatPendingChangesCommand));
                     mcs.AddCommand(formatPendingChangesCommand);
                 }
                 {
-                    var formatSolutionCommand = new OleMenuCommand(_service.FormatSolutionAsync,
+                    var formatSolutionCommand = new OleMenuCommand(_service.FormatSolution,
                                                                    null,
                                                                    _service.QueryStatus,
                                                                    new CommandID(GuidList.guidFormatPendingChangesCmdSet, (int)PkgCmdIDList.idFormatSolutionCommand));
                     mcs.AddCommand(formatSolutionCommand);
                 }
                 {
-                    var undoUnmodifiedChangesCommand = new OleMenuCommand(_service.UndoUnmodifiedChangesAsync,
+                    var undoUnmodifiedChangesCommand = new OleMenuCommand(_service.UndoUnmodifiedChanges,
                                                                           null,
                                                                           _service.QueryStatus,
                                                                           new CommandID(GuidList.guidFormatPendingChangesCmdSet, (int)PkgCmdIDList.idUndoUnmodifiedChangesCommand));

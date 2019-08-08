@@ -51,13 +51,8 @@
     <Compile Include="DocumentActions\DocumentActionService.cs" />
     <Compile Include="DocumentActions\DocumentExecuteCommandAction.cs" />
     <Compile Include="DocumentActions\FormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\HtmlFormatDocumentAction.cs" />
     <Compile Include="DocumentActions\JsonFormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\PythonFormatDocumentAction.cs" />
     <Compile Include="DocumentActions\RemoveAndSortDocumentAction.cs" />
-    <Compile Include="DocumentActions\ScssFormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\TypeScriptFormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\XmlFormatDocumentAction.cs" />
     <Compile Include="FormatPendingChangesService.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Guids.cs" />
@@ -70,7 +65,6 @@
     </Compile>
     <Compile Include="SourceControlProviders\GitProvider.cs" />
     <Compile Include="SourceControlProviders\ISourceControlProvider.cs" />
-    <Compile Include="SourceControlProviders\TfvcProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
@@ -79,14 +73,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="LibGit2Sharp">
-      <HintPath>References\LibGit2Sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TeamFoundation.Client">
-      <HintPath>References\Microsoft.TeamFoundation.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TeamFoundation.VersionControl.Client">
-      <HintPath>References\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
+    <Reference Include="References\LibGit2Sharp.dll">
+      <Name>LibGit2Sharp</Name>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Design" />

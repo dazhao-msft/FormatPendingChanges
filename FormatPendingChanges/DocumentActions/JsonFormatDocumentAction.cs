@@ -1,7 +1,6 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using System;
-using System.ComponentModel.Composition;
 using System.Composition;
 
 namespace FormatPendingChanges.DocumentActions

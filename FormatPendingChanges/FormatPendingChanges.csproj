@@ -45,14 +45,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DocumentActions\CSharpFormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\CSharpRemoveAndSortDocumentAction.cs" />
     <Compile Include="DocumentActions\DocumentAction.cs" />
     <Compile Include="DocumentActions\DocumentActionService.cs" />
     <Compile Include="DocumentActions\DocumentExecuteCommandAction.cs" />
     <Compile Include="DocumentActions\FormatDocumentAction.cs" />
     <Compile Include="DocumentActions\JsonFormatDocumentAction.cs" />
-    <Compile Include="DocumentActions\RemoveAndSortDocumentAction.cs" />
     <Compile Include="FormatPendingChangesService.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Guids.cs" />
